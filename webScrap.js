@@ -19,7 +19,7 @@ function webScrapCovid( callback ) {
 }
 
 function extrairDoHtml( html ) {
-    console.log( "A extrair do Html" , html );
+    console.log( "A extrair do Html"  );
 
     let regExp = new RegExp("<tr>[^<]*<td>(?<concelho>[^<]*)</td>[^<]*<td[^>]*>(?<casos>[^<]*)<", "gi");
 
@@ -28,9 +28,9 @@ function extrairDoHtml( html ) {
     let lista = [];
     for (const match of matches) 
     {
-        console.log(match.index);   
-        console.log(match.groups);
-        console.log(match.groups.concelho, match.groups.casos );
+        //console.log(match.index);   
+        //console.log(match.groups);
+        //console.log(match.groups.concelho, match.groups.casos );
         lista.push( { concelho: match.groups.concelho, casos: Number( match.groups.casos )} );
     }
 
