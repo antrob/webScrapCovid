@@ -1,0 +1,15 @@
+{
+  "name": "scrapcovid",
+  "version": "1.0.0",
+  "description": "Web Scrap para extrair de uma página HTML os casos de Covid por concelho ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "author": "AntRob",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
